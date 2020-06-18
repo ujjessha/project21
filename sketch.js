@@ -24,7 +24,7 @@ function draw() {
   bullet.shapeColor=color("white");
   wall.shapeColor=color(80,80,80);
   
-   if(hasCollided(bullet,wall)){
+   if(hasCollided(wall,bullet)){
     bullet.velocityX=0;
 
     var damage=0.5*weight*speed*speed/(thickness*thickness*thickness);
@@ -40,7 +40,7 @@ function draw() {
  
 
 
-  hasCollided();
+
   
  drawSprites();
 }
